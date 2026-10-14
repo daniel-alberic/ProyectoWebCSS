@@ -50,6 +50,7 @@ header {
     text-decoration: none;
     color: var(--colorTitulos);
     font-weight: 600;
+    font-style: italic;
 }
 
 .menu__enlaces a:hover{
