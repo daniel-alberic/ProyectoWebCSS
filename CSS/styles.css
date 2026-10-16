@@ -153,4 +153,27 @@ header {
     font-family: 'Poppins';
     margin: 35px 20px;
 }
+
+@media screen and (max-width: 860px) {
+    .mainbanner {
+        padding: 6em 2em;
+    }
+    .mainbanner__boton {
+        display: block;
+        margin-bottom: 1em;
+    }
+
+    .mainbanner__data {
+        text-align: center;
+        margin: auto;
+    }
+
+    .mainbanner__titulo {
+       font-size: 2em;
+    }
+
+    .mainbanner__parrafo {
+        font-size: 1em;
+    }
+}
 /* FIN DE BANNER */
