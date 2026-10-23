@@ -44,6 +44,7 @@ header {
 }
 
 .menu__enlaces a{
+    display: flex;
     font-family:  "Indie Flower", cursive;
     padding: .7em;
     text-align: center;
@@ -79,8 +80,12 @@ header {
 
     .menu__enlaces {
         width: 100%;
-        display: flex;
+        display: none;
         flex-direction: column;
+    }
+
+    .menu__enlaces.activo {
+        display: flex;
     }
 }
 
