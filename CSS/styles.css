@@ -17,13 +17,15 @@
     box-sizing: border-box;
 }
 
+/* INICIO DE MENÚ */
 header {
-    background: #e166c9;
+    background: #ffff;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
-    box-shadow: 0px 0px 40px var(--colorSombras);
+    box-shadow: 0px 0px 40px #ffff;
+    margin-top: 10px auto;
 }
 
 .menu {
@@ -35,6 +37,20 @@ header {
     align-items: center;
 }
 
+.menu__enlaces {
+    text-decoration: none;
+    align-items: center;
+    gap: 30px;
+}
+.menu__enlaces a {
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #2a2a2a;
+}
+.menu__enlaces a:hover {
+    color: var(--color-Primario);
+}
+
 .menu__img-logo {
     height: 60px;
 }
@@ -43,25 +59,13 @@ header {
     display: none;
 }
 
-.menu__enlaces a{
-    display: flex;
-    font-family:  "Indie Flower", cursive;
-    padding: .7em;
-    text-align: center;
-    font-size: 1em;
-    text-decoration: none;
-    color: var(--colorTitulos);
-    font-weight: 600;
-    font-style: italic;
-}
-
-.menu__enlaces a:hover{
-    color: var(--colorPrimario);
-}
-
 @media screen and (max-width: 1023px) {
     header .menu{
         flex-direction: column;
+    }
+
+    .main__banner {
+        margin-top: 80px;
     }
 
     .menu__logo {
@@ -78,16 +82,34 @@ header {
         font-size: 1.5em;
     }
 
-    .menu__enlaces {
+        .menu__enlaces {
         width: 100%;
         display: none;
         flex-direction: column;
     }
 
     .menu__enlaces.activo {
+        display: flex ; 
+        flex-direction: column ;
+        align-items: center;
+        width: 100% ;
+    }
+
+    .menu__enlaces a {
+        display: block;
+        width: 100% ;
+        text-align: center ;
+        padding: 10px 0 ;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu__enlaces {
         display: flex;
     }
 }
+
+/* FIN DE MENÚ */
 
 /* INICIO DE BANNER */
 .mainbanner {
@@ -157,8 +179,8 @@ header {
 }
 
 .mainbanner__boton {
-    background: rgb(173, 101, 161);
-    color: #fff;
+    background: rgb(25, 21, 145);
+    color: #fffffe;
     padding: 1em 1.2em;
     border-radius: 8px;
     text-decoration: none;
@@ -254,3 +276,32 @@ h1 {
     margin: 1.5em auto;
 }
 /* FIN CARDS */
+
+/* INICIO DE FOOTER */
+footer {
+    background-color: var(--colorSombras);
+    color: #ffff;
+    padding: 3em 0;
+}
+
+.iconos-pie {
+    font-size: 3em;
+}
+
+.iconos-pie:hover {
+    color: var(--colorPrimario);
+}
+
+.pie, .info {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.derechos {
+    background-color: var(--colorParrafos);
+    color: #ffff;
+    font-family: "Poppins";
+    padding: 0.5em 0;
+}
+/* FIN DE FOOTER */

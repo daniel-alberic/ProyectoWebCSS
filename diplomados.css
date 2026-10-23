@@ -9,6 +9,7 @@
     --color-secundario:  #6e6a6a;
 }
 
+/* INICIO DE MENÚ */
 header {
     background: #ffff;
     position: fixed;
@@ -255,3 +256,36 @@ h1 {
 .whatsapp-container img:hover {
     transform: scale(1.1); /* Efecto de crecimiento al pasar el mouse */
 }
+
+/* INICIO DE FOOTER */
+footer {
+    background-color: #2a2a2a;
+    color: #ffff;
+    padding: 3em 0;
+}
+
+.iconos-pie {
+    font-size: 3em;
+   
+}
+
+.iconos-pie:hover {
+    color: red;
+}
+
+.pie, .info {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1em;
+    width: 100%;
+}
+
+.derechos {
+    background-color: #5f5e5e;
+    color: #ffff;
+    font-family: "Poppins";
+    padding: 0.5em 0;
+    text-align: center;
+    width: 100%;
+}
+/* FIN DE FOOTER */
