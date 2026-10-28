@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Contacto</title>
 
     <!-- FAVICON Y/O LOGOTIPO DE PAGINA -->
@@ -29,12 +29,14 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="CSS/contacto.css">
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/contacto.css" />
 
-<!-- NAVEGACIÓN -->
- <header id="header">
+    <!-- JS -->
+    <script src="js/WE_MC_03_jquery.js"></script>
+  </head>
+  <body>
+    <!-- NAVEGACIÓN -->
+    <header id="header">
       <nav class="menu">
         <div class="menu__logo">
           <a href="#">
@@ -56,139 +58,136 @@
 
     <!-- LOGIN -->
     <div class="contact-container">
-<!-- Columna Izquierda: Información -->
- <div class="contact-info">
+      <!-- Columna Izquierda: Información -->
+      <div class="contact-info">
         <h2 class="info-title">Vamos a ponernos en contacto connosotros</h2>
 
-  <ul class="info-list">
+        <ul class="info-list">
+          <li>
+            <i class="fa-regular fa-envelope"></i>
+            <span>dani619349@gmail.com</span>
+          </li>
 
-     <li>
-       <i class="fa-regular fa-envelope"></i>
-       <span>dani619349@gmail.com</span>
-     </li>
+          <li>
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>Daniel A. Espinoza Q.</span>
+          </li>
 
-     <li>
-       <i class="fa-solid fa-map-location-dot"></i>
-       <span>Daniel A. Espinoza Q.</span>
-    </li>
+          <li>
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>+51 934 125 478</span>
+          </li>
+        </ul>
 
-    <li>
-      <i class="fa-solid fa-phone-volume"></i>
-      <span>+51 934 125 478</span>
-    </li>
+        <div class="social-section">
+          <p>Conéctate conmigo:</p>
 
-  </ul>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
 
-    <div class="social-section">
-      <p>Conéctate conmigo:</p>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
 
- <div class="social-icons">
-  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
 
-  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
 
-  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <!-- Círculo decorativo inferior -->
+        <div class="circle-decoration"></div>
+      </div>
 
-  <a href="#"><i class="fa-brands fa-instagram"></i></a>
- </div>
-
-    </div>
-
-      <!-- Círculo decorativo inferior -->
-      <div class="circle-decoration"></div>
-
- </div>
-
-<!-- Columna Derecha: Formulario -->
-  <div class="contact-form">
-    <h2 class="form-title">Contacta con nosotros</h2>
-  <form action="#" method="POST">
-<!-- Se usa fieldset y legend para lograr el efecto de la
+      <!-- Columna Derecha: Formulario -->
+      <div class="contact-form">
+        <h2 class="form-title">Contacta con nosotros</h2>
+        <form action="#" method="POST">
+          <!-- Se usa fieldset y legend para lograr el efecto de la
 
 línea cortada por el texto sin usar fondos sólidos -->
-<fieldset class="input-group">
-  <legend>Usuario</legend>
-  <input type="text" name="username" required>
-</fieldset>
+          <fieldset class="input-group">
+            <legend>Usuario</legend>
+            <input type="text" name="username" required />
+          </fieldset>
 
-<fieldset class="input-group">
-  <legend>Email</legend>
-  <input type="email" name="email" required>
-</fieldset>
+          <fieldset class="input-group">
+            <legend>Email</legend>
+            <input type="email" name="email" required />
+          </fieldset>
 
-<fieldset class="input-group">
-  <legend>Celular</legend>
-  <input type="tel" name="phone" required>
-</fieldset>
+          <fieldset class="input-group">
+            <legend>Celular</legend>
+            <input type="tel" name="phone" required />
+          </fieldset>
 
-<fieldset class="input-group textarea-group">
-  <legend>Mensaje</legend>
-  <textarea name="message" required></textarea>
-</fieldset>
+          <fieldset class="input-group textarea-group">
+            <legend>Mensaje</legend>
+            <textarea name="message" required></textarea>
+          </fieldset>
 
-    <button type="submit" class="btn-send">Enviar</button>
-
-  </form>
-  </div>
+          <button type="submit" class="btn-send">Enviar</button>
+        </form>
+      </div>
     </div>
 
-<!-- INICIO DE FOOTER -->
+    <!-- INICIO DE FOOTER -->
     <footer>
-        <div class="container">
-            <div class="row">
-                
-                <!-- BLOQUE 1: CONTACTO -->
-                <div class="col-2 col-sm-1 col-md-1 col-lg-1">
-                    <span class="iconos-pie"><i class="fas fa-mobile-alt"></i></span>
-                </div>
-                <div class="col-10 col-sm-3 col-md-3 col-lg-3">
-                    <span class="pie">Contacto</span><br>
-                    <span class="info">+51 934 125 478</span><br>
-                    <span>+51 934 125 478 (Whatsapp)</span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <!-- BLOQUE 1: CONTACTO -->
+          <div class="col-2 col-sm-1 col-md-1 col-lg-1">
+            <span class="iconos-pie"><i class="fas fa-mobile-alt"></i></span>
+          </div>
+          <div class="col-10 col-sm-3 col-md-3 col-lg-3">
+            <span class="pie">Contacto</span><br />
+            <span class="info">+51 934 125 478</span><br />
+            <span>+51 934 125 478 (Whatsapp)</span>
+          </div>
 
-                <!-- BLOQUE 2: E-MAIL -->
-                <div class="col-2 col-sm-1 col-md-1 col-lg-1">
-                    <span class="iconos-pie"><i class="fas fa-envelope"></i></span>
-                </div>
-                <div class="col-10 col-sm-3 col-md-3 col-lg-3">
-                    <span class="pie">E-Mail</span><br>
-                    <span class="info">dani619349@gmail.com</span>
-                </div>
+          <!-- BLOQUE 2: E-MAIL -->
+          <div class="col-2 col-sm-1 col-md-1 col-lg-1">
+            <span class="iconos-pie"><i class="fas fa-envelope"></i></span>
+          </div>
+          <div class="col-10 col-sm-3 col-md-3 col-lg-3">
+            <span class="pie">E-Mail</span><br />
+            <span class="info">dani619349@gmail.com</span>
+          </div>
 
-                <!-- BLOQUE 3: DIRECCIÓN -->
-                <div class="col-2 col-sm-1 col-md-1 col-lg-1">
-                    <span class="iconos-pie"><i class="fas fa-map-marker-alt"></i></span>
-                </div>
-                <div class="col-10 col-sm-3 col-md-3 col-lg-3">
-                    <span class="pie">Dirección</span><br>
-                    <span class="info">Lima - Perú</span>
-                </div>
-
-            </div>
+          <!-- BLOQUE 3: DIRECCIÓN -->
+          <div class="col-2 col-sm-1 col-md-1 col-lg-1">
+            <span class="iconos-pie"
+              ><i class="fas fa-map-marker-alt"></i
+            ></span>
+          </div>
+          <div class="col-10 col-sm-3 col-md-3 col-lg-3">
+            <span class="pie">Dirección</span><br />
+            <span class="info">Lima - Perú</span>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- FIN DE FOOTER -->
 
-<!-- INICIO DE DERECHOS -->
- <aside class="derechos">
-        <div class="container">
-            <div class="row">
+    <!-- INICIO DE DERECHOS -->
+    <aside class="derechos">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            DEVLAB SOLUCIONES INFORMÁTICAS SAC @2022 - Todos los derechos
+            reservados
+          </div>
 
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                    DEVLAB SOLUCIONES INFORMÁTICAS SAC @2022 - Todos los derechos reservados
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 creditos">
-                    Desarrollado por <a href="https://github.com" class="devlab"><strong>Daniel Espinoza Q.</strong></a>
-                </div>
-
-            </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 creditos">
+            Desarrollado por
+            <a href="https://github.com" class="devlab"
+              ><strong>Daniel Espinoza Q.</strong></a
+            >
+          </div>
         </div>
+      </div>
     </aside>
-<!-- FIN DE DERECHOS -->
+    <!-- FIN DE DERECHOS -->
 
-        <script src="js/WE_MC_02_headroom.min.js"></script>
+    <script src="js/WE_MC_02_headroom.min.js"></script>
     <script src="js/WE_MC_04_menu-flex.js"></script>
-</body>
+  </body>
 </html>
