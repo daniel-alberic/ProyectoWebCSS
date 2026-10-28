@@ -1,0 +1,162 @@
+.first__img {
+    width: 100%;
+    max-height: 100%;
+    background-size: contain;
+}
+
+.second__img {
+    justify-content: center;
+    width: 100%;
+    height: 380px;
+}
+
+/* LOGIN */
+.titulo__login {
+    text-align: center;
+    padding: 0 auto;
+}
+
+.parrafo__login {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 25px auto;
+}
+
+.input__login {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    font-family: "Poppins";
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #545454b5;
+}
+
+.grupo__input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.grupo__input i {
+    position: absolute;
+    right: 10px;
+}
+
+/* BOTON MODO PALANQUITA */
+.grupo__switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.input__switch {
+    display: none;
+}
+
+.switch__label {
+    cursor: pointer;
+    width: 45px;
+    height: 22px;
+    background: #ccc;
+    border-radius: 20px;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.switch__label::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    background: #ffff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.input__switch:checked + .switch__label {
+    background: #333;
+}
+
+.input__switch:checked + .switch__label::after {
+    transform: translate(23px);
+}
+
+/* CAPTCHA */
+
+.captcha-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    padding: 12px 15px;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 300px; /* Ajusta según el ancho de tu formulario */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.captcha-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.captcha-content input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.captcha-content label {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.captcha-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    color: #555;
+}
+
+.captcha-logo i {
+    font-size: 16px;
+    color: #4285F4;
+    margin-bottom: 2px;
+}
+
+.captcha-logo small {
+    font-size: 8px;
+    color: #888;
+}
+
+.enlace__login {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #f30000;
+    margin-top: 10px;
+}
+
+.boton__login {
+    margin-top: 70px;
+    display: block;
+    width: 100%;
+    color: #ffff;
+    background: #f50000;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+}
